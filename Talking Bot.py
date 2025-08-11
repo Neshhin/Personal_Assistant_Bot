@@ -4,7 +4,6 @@ import google.generativeai as genai
 import time
 
 
-# ===================== TTS Initialization =====================
 def initialize_tts():
     try:
         engine = pyttsx3.init()
@@ -76,7 +75,7 @@ def test_tts():
 
 # ===================== Gemini API Configuration =====================
 # IMPORTANT: Replace with your actual API key
-genai.configure(api_key="AIzaSyCs59emAN1Z9hUSUoFt59G6_P3qfWl8Mhs")  # <-- Replace with your real key
+genai.configure(api_key="API KEY")  # <-- Replace with your real key
 
 generation_config = {
     "temperature": 0.7,
@@ -213,4 +212,5 @@ if __name__ == "__main__":
         speak("Goodbye!")
     except Exception as e:
         print(f"❌ Fatal error: {e}")
+
         speak("I'm experiencing technical difficulties. Goodbye!")
